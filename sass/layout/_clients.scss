@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
   color: var(--color-logo-title);
   font-weight: 700;
   font-size: 36px;
@@ -7,17 +7,17 @@
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
 
-.client-item {
+.client__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -29,10 +29,11 @@
   color: var(--color-bg-blue);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  fill: currentColor;
-  border-color: var(--color-bg-blue);
+  & {
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      border-color: var(--color-bg-blue);
+    }
+  }
 }

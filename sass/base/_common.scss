@@ -30,9 +30,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+  & {
+    &:hover,
+    &:focus {
+      color: var(--color-bg-blue);
+    }
+  }
 }
 
-.link:hover,
-.link:focus {
-  color: var(--color-bg-blue);
+.pointer {
+  cursor: pointer;
 }
